@@ -4,7 +4,7 @@
 }
 
 <div class="text-center container">
-    @if(ViewBag.userAccess < 2){
+    @if (ViewBag.userAccess >= 1 && ViewBag.userAccess <= 2){
         <h1 class="text-warning text-capitalize"> You do not have a sufficient access level to view this data.</h1>
     }
     else if(ViewBag.userAccess < 8 && ViewBag.userAccess > 2)
@@ -25,7 +25,7 @@
             </tbody>
         </table>
     }
-    else if (ViewBag.userAccess >= 8)
+    else if (ViewBag.userAccess >= 8 && ViewBag.userAccess <= 10)
     {
         <h1>Hello Admin</h1>
         <table class="table table-bordered table-hover">
