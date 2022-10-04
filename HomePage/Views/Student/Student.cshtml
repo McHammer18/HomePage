@@ -1,0 +1,23 @@
+﻿@model List<StudentModel>
+@{
+    ViewBag.Title = "Students";
+}
+
+<div class="text-center container">
+    <h1>Students</h1>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr><th>First Name</th><th>Last Name</th><th>Grade</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.FirstName</td>
+                    <td>@student.LastName</td>
+                    <td>@student.Grade</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - HomePage</title>
+    <title>@ViewData["Title"] = HomePage</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HomePage.styles.css" asp-append-version="true" />
@@ -27,14 +27,14 @@
                         </li>
 
                         <li class="dropdown">
-                            <a href="#" class="nav-link text-dark dropdown-toggle" data-toggle="dropdown" role="button" 
+                            <a href="#" class="dropdown nav-link text-dark dropdown-toggle" data-bs-toggle="dropdown" role="button" 
                             aria-haspopup="true" aria-expanded="false">Assignments <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="https://github.com/McHammer18/MovieListChristensen">Movie List</a></li>
                                 <li><a class="dropdown-item" href="https://github.com/McHammer18/FirstResponsiveWebAppChristensen">Responsive Web App</a></li>
                                 <li><a class="dropdown-item" href="https://github.com/McHammer18/MultiWebPageChristensen">Multi Page Web App</a></li>
                                 <li><a class="dropdown-item" href="https://github.com/McHammer18/CH02FutureValueChristensen">Future Value</a></li>
-                                <li><a class="dropdown-item" href="#">Assignment6.1</a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="StudentController" asp-action="Index">Assignment6.1</a></li>
                             </ul>
                         </li>
                     </ul>
