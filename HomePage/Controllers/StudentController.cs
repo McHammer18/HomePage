@@ -14,10 +14,11 @@ namespace HomePage.Controllers
             context = dbcontext;
         }
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(int userAccess)
         {
             var students = context.Students
                 .ToList();
+            ViewBag.userAccess = userAccess;
             return View(students);
         }
     }
